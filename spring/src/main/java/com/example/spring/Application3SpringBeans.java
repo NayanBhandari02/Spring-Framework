@@ -12,7 +12,6 @@ public class Application3SpringBeans {
 	public static void main(String[] args) {
 
 		try(var context = new AnnotationConfigApplicationContext(GamingConfig.class)) {
-			context.getBean(gamingConsole.class).up();
 			context.getBean(gameRunner.class).run();
 		}
 
